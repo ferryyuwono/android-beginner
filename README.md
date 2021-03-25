@@ -1,2 +1,2 @@
 # android-beginner
-Quiz and Solution for Android for Beginner Module
+Demo, Exercise, and Solution for Beginner Level for Android Development using Kotlin
