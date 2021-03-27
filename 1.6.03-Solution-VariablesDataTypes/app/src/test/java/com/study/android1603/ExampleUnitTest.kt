@@ -46,12 +46,14 @@ class ExampleUnitTest {
         val pocketMoney = 1000
         val pocketMoneyInLong: Long = pocketMoney.toLong()
 
+        //Uncomment to print pocketMoneyInLong
         println("Pocket Money: $pocketMoneyInLong")
 
         //Add explicit conversion toDouble()
         val radius = 15.5f
         val diameter: Double = radius.toDouble() * 2
 
+        //Uncomment to print diameter
         println("Diameter: $diameter")
 
         assertEquals(4, 2 + 2)
@@ -59,22 +61,25 @@ class ExampleUnitTest {
 
     @Test
     fun nullable() {
-        //Add `?` to data type to make it nullable
+        //Create nullable data type by adding `?` to the end of data type
         var nullableInt: Int? = null
         var nullableDouble: Double? = null
         var nullableBoolean: Boolean? = null
         var nullableString: String? = null
 
+        //Uncomment to print nullable data type
         println("Nullable Int: $nullableInt")
         println("Nullable Double: $nullableDouble")
         println("Nullable Boolean: $nullableBoolean")
         println("Nullable String: $nullableString")
 
+        //Change value to (10, 3.14, true, "World")
         nullableInt = 10
         nullableDouble = 3.14
         nullableBoolean = true
         nullableString = "World"
 
+        //Uncomment to print nullable data type
         println("Nullable Int: $nullableInt")
         println("Nullable Double: $nullableDouble")
         println("Nullable Boolean: $nullableBoolean")
@@ -95,6 +100,7 @@ class ExampleUnitTest {
         val unsignedShort: UShort = 32768u
         val unsignedInt: UInt = 2147483648u
 
+        //Uncomment to print unsigned data type
         println("Unsigned Int: $unsignedByte")
         println("Unsigned Double: $unsignedShort")
         println("Unsigned Boolean: $unsignedInt")
