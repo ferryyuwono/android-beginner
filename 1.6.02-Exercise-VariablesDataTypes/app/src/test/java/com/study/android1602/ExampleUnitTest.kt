@@ -44,41 +44,46 @@ class ExampleUnitTest {
     fun explicitConversions() {
         //TODO: Add explicit conversion toLong()
         val pocketMoney = 1000
-        val pocketMoneyInLong: Long = pocketMoney
+        //val pocketMoneyInLong: Long = pocketMoney
 
-        println("Pocket Money: $pocketMoneyInLong")
+        //TODO: Uncomment to print pocketMoneyInLong
+        //println("Pocket Money: $pocketMoneyInLong")
 
         //TODO: Add explicit conversion toDouble()
         val radius = 15.5f
-        val diameter: Double = radius * 2
+        //val diameter: Double = radius * 2
 
-        println("Diameter: $diameter")
+        //TODO: Uncomment to print diameter
+        //println("Diameter: $diameter")
 
         assertEquals(4, 2 + 2)
     }
 
     @Test
     fun nullable() {
-        //TODO: Add `?` to data type to make it nullable
-        var nullableInt: Int = null
-        var nullableDouble: Double = null
-        var nullableBoolean: Boolean = null
-        var nullableString: String = null
+        //TODO: Create nullable data type by adding `?` to the end of data type
+        //var nullableInt: Int = null
+        //var nullableDouble: Double = null
+        //var nullableBoolean: Boolean = null
+        //var nullableString: String = null
 
-        println("Nullable Int: $nullableInt")
-        println("Nullable Double: $nullableDouble")
-        println("Nullable Boolean: $nullableBoolean")
-        println("Nullable String: $nullableString")
+        //TODO: Uncomment to print nullable data type
+        //println("Nullable Int: $nullableInt")
+        //println("Nullable Double: $nullableDouble")
+        //println("Nullable Boolean: $nullableBoolean")
+        //println("Nullable String: $nullableString")
 
-        nullableInt = 10
-        nullableDouble = 3.14
-        nullableBoolean = true
-        nullableString = "World"
+        //TODO: Change value to (10, 3.14, true, "World")
+        //nullableInt = 10
+        //nullableDouble = 3.14
+        //nullableBoolean = true
+        //nullableString = "World"
 
-        println("Nullable Int: $nullableInt")
-        println("Nullable Double: $nullableDouble")
-        println("Nullable Boolean: $nullableBoolean")
-        println("Nullable String: $nullableString")
+        //TODO: Uncomment to print nullable data type
+        //println("Nullable Int: $nullableInt")
+        //println("Nullable Double: $nullableDouble")
+        //println("Nullable Boolean: $nullableBoolean")
+        //println("Nullable String: $nullableString")
 
         assertEquals(4, 2 + 2)
     }
@@ -91,13 +96,14 @@ class ExampleUnitTest {
     @Test
     fun unsignedType() {
         //TODO: Change data type to unsigned data types (positive value only)
-        val unsignedByte: Byte = 128
-        val unsignedShort: Short = 32768
-        val unsignedInt: Int = 2147483648
+        //val unsignedByte: Byte = 128
+        //val unsignedShort: Short = 32768
+        //val unsignedInt: Int = 2147483648
 
-        println("Unsigned Int: $unsignedByte")
-        println("Unsigned Double: $unsignedShort")
-        println("Unsigned Boolean: $unsignedInt")
+        //TODO: Uncomment to print unsigned data type
+        //println("Unsigned Int: $unsignedByte")
+        //println("Unsigned Double: $unsignedShort")
+        //println("Unsigned Boolean: $unsignedInt")
 
         assertEquals(4, 2 + 2)
     }
