@@ -57,8 +57,8 @@ class ExampleUnitTest {
         //Numbers
         val byteVariable: Byte = 127
         val shortVariable: Short = -32768
-        val intVariable: Int = 2147483647
-        val longVariable: Long = 9223372036854775807
+        val intVariable: Int = 1000
+        val longVariable: Long = 1L
         println("Byte: $byteVariable")
         println("Short: $shortVariable")
         println("Int: $intVariable")
