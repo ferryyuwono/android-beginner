@@ -1,4 +1,4 @@
-package com.study.aandroid1602
+package com.study.android1602
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
