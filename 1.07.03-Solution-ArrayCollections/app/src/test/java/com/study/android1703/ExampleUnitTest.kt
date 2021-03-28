@@ -27,7 +27,7 @@ class ExampleUnitTest {
     }
 
     @Test
-    fun createArrayOfNullableString() {
+    fun createArrayOfNullableInteger() {
         //Create array which can store null and integer with size of 3
         val array: Array<Int?> = arrayOf(0, null, 2) //You can also remove the data types
 

@@ -27,8 +27,8 @@ class ExampleUnitTest {
     }
 
     @Test
-    fun createArrayOfNullableString() {
-        //TODO: Create array which can store null and string with size of 3
+    fun createArrayOfNullableInteger() {
+        //TODO: Create array which can store null and integer with size of 3
         //val array = ...
 
         //TODO: Uncomment to print array value
