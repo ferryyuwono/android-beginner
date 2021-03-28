@@ -37,7 +37,7 @@ class ExampleUnitTest {
         //Given height is positive number
         val userId = 1L
 
-        //TODO: Simplified variable assignment with if
+        //TODO: Simplified variable assignment with when
         val userRole: String
         when (userId) {
             1L -> userRole = "Admin"
