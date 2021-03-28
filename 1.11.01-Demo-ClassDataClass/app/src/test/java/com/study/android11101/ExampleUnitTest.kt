@@ -12,33 +12,41 @@ import org.junit.Assert.*
 class ExampleUnitTest {
     @Test
     fun createPersonClass() {
-        val person1 = Person("Budi", 23)
-        val person2 = Person("Anton", 24)
+        //Create Person instance from class
+        val person1 = Person("Budi", "Arif", 23)
+        val person2 = Person("Anton", "Harum", 24)
 
-        println("Person 1: ${person1.name} ${person1.age} years old")
-        println("Person 2: ${person2.name} ${person2.age} years old")
+        //Print person
+        person1.printPerson()
+        person2.printPerson()
 
         assertEquals(4, 2 + 2)
     }
 
     @Test
     fun createPersonDataClass() {
-        val person1 = PersonData("Budi", 23)
-        val person2 = PersonData("Anton", 24)
+        //Create Person object from data class
+        val person1 = PersonData("Budi", "Arif", 23)
+        val person2 = PersonData("Anton", "Harum", 24)
 
-        println("Person 1: ${person1.name} ${person1.age} years old")
-        println("Person 2: ${person2.name} ${person2.age} years old")
+        //Print person data
+        println("Person 1: $person1")
+        println("Person 2: $person2")
 
         assertEquals(4, 2 + 2)
     }
 
     @Test
     fun comparePersonClassVsDataClass() {
-        val person1 = Person("Budi", 23)
-        val person2 = PersonData("Budi", 23)
+        val person1 = Person("Budi", "Arif", 23)
+        val person2 = PersonData("Budi", "Harum", 23)
 
-        println("Person Class: $person1")
-        println("Person Data Class: $person2")
+        val copyOfPerson1 = Person(person1.firstName, person1.lastName, person1.age)
+        val copyOfPerson2 = person2.copy()
+
+        //Print person directly
+        println("Person: $copyOfPerson1")
+        println("Person: $copyOfPerson2")
 
         assertEquals(4, 2 + 2)
     }
