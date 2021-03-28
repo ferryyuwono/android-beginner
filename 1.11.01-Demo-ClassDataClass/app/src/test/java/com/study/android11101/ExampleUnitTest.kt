@@ -25,7 +25,7 @@ class ExampleUnitTest {
 
     @Test
     fun createPersonDataClass() {
-        //Create Person object from data class
+        //Create Person instance from data class
         val person1 = PersonData("Budi", "Arif", 23)
         val person2 = PersonData("Anton", "Harum", 24)
 
@@ -38,15 +38,17 @@ class ExampleUnitTest {
 
     @Test
     fun comparePersonClassVsDataClass() {
+        //Create Person instance from class and data class
         val person1 = Person("Budi", "Arif", 23)
         val person2 = PersonData("Budi", "Harum", 23)
 
+        //Create copy of Person instance
         val copyOfPerson1 = Person(person1.firstName, person1.lastName, person1.age)
-        val copyOfPerson2 = person2.copy()
+        val copyOfPerson2 = person2.copy() //Data class has `copy()` function provided
 
         //Print person directly
-        println("Person: $copyOfPerson1")
-        println("Person: $copyOfPerson2")
+        println("Person: $copyOfPerson1") //com.study.android11101.Person
+        println("Person: $copyOfPerson2") //PersonData(firstName=Budi, lastName=Harum, age=23)
 
         assertEquals(4, 2 + 2)
     }
