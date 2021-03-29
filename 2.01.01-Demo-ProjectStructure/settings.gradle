@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "2.01.01-Demo-ProjectStructure"
