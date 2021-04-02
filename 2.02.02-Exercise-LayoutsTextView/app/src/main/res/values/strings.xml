@@ -2,5 +2,6 @@
     <string name="app_name">2.02.02-Exercise-LayoutsTextView</string>
 
     <!-- TODO: Create string for activity_main.xml -->
+    <!-- TODO: Resources listed here can be setup with multiple value for localization(different language), screen size, orientation, etc -->
 
 </resources>

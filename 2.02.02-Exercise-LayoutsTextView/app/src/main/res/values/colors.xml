@@ -9,5 +9,6 @@
     <color name="white">#FFFFFFFF</color>
 
     <!-- TODO: Create color for activity_main.xml -->
+    <!-- TODO: Resources listed here can be setup with multiple value for localization(different language), screen size, orientation, etc -->
 
 </resources>
