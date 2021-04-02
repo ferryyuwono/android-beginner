@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">2.02.03-Solution-LayoutsTextView</string>
+
+    <!-- Create string for activity_main.xml -->
+    <!-- Resources listed here can be setup with multiple value for localization(different language), screen size, orientation, etc -->
+    <string name="main_header_title">Prototype Screen</string>
+    <string name="main_header_logo">Logo</string>
+    <string name="main_banner_title">Banner</string>
+    <string name="main_footer_menu">Menu</string>
+    <string name="main_person_budi">Budi Arif</string>
+    <string name="main_person_anton">Anton Harum</string>
+</resources>

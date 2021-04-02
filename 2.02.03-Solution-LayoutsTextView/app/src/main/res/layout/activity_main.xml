@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Header -->
+    <!-- Set background #EAEAEA and extract the color to res/values/colors.xml -->
+    <!-- After extract the color, you can set background using "@color/[color_name]" -->
+    <!-- Set paddingTop 10dp and paddingBottom 10dp -->
+    <!-- Set constraint top to top of parent -->
+    <RelativeLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/main_header_background_color"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Create TextView for title of the header -->
+        <!-- Set text to "Prototype Screen" and extract the text to res/values/strings.xml -->
+        <!-- After extract the text, you can set text using "@string/[string_name]" -->
+        <!-- Set layout_marginStart 20dp, textSize 14sp, and textColor #363636 -->
+        <!-- Extract textColor to res/values/colors.xml -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_header_title"
+            android:layout_marginStart="20dp"
+            android:textSize="14sp"
+            android:textColor="@color/main_header_text_color" />
+
+        <!-- Create TextView for logo of the header -->
+        <!-- Set text to "Logo" and extract the text to res/values/strings.xml -->
+        <!-- Align it to end, set layout_marginEnd 20dp, textSize 14sp, textStyle italic -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_header_logo"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+    </RelativeLayout>
+
+    <!-- Banner -->
+    <!-- Set background to #424242 and extract the color to res/values/colors.xml -->
+    <!-- Set layoutContent constraint to bellow layoutHeader -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutBanner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/main_banner_background_color"
+        app:layout_constraintTop_toBottomOf="@id/layoutHeader">
+
+        <!-- Create TextView for banner -->
+        <!-- Set text to "banner" and extract the text to res/values/strings.xml -->
+        <!-- Set textSize: 20dp, textColor #CCCCCC and extract textColor to res/values/colors.xml -->
+        <!-- Align it start, end, top, bottom of parent (center of parent) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_banner_title"
+            android:textSize="20sp"
+            android:textColor="@color/main_banner_text_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Footer -->
+    <!-- Set background to #25282A and extract the color to res/values/colors.xml -->
+    <!-- Set padding 4dp -->
+    <!-- Set constraint bottom to bottom of parent -->
+    <LinearLayout
+        android:id="@+id/layoutFooter"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/main_footer_background_color"
+        android:padding="4dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Create TextView for menu of footer -->
+        <!-- Set layout_weight "1" and layout_width 0dp (Let LinearLayout divide it based on weight) -->
+        <!-- Set background to #9EA1A2 and extract the color to res/values/colors.xml -->
+        <!-- Set layout_margin 4dp, gravity "center" (Text will be centered) -->
+        <!-- Set text to "Menu" and extract the text to res/values/strings.xml -->
+        <!-- Set textColor #404040 and extract textColor to res/values/colors.xml -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/main_footer_menu_background_color"
+            android:layout_margin="4dp"
+            android:gravity="center"
+            android:text="@string/main_footer_menu"
+            android:textColor="@color/main_footer_menu_text_color" />
+
+        <!-- Repeat creation of menu TextView for 4 more times -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/main_footer_menu_background_color"
+            android:layout_margin="4dp"
+            android:gravity="center"
+            android:text="@string/main_footer_menu"
+            android:textColor="@color/main_footer_menu_text_color" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/main_footer_menu_background_color"
+            android:layout_margin="4dp"
+            android:gravity="center"
+            android:text="@string/main_footer_menu"
+            android:textColor="@color/main_footer_menu_text_color" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/main_footer_menu_background_color"
+            android:layout_margin="4dp"
+            android:gravity="center"
+            android:text="@string/main_footer_menu"
+            android:textColor="@color/main_footer_menu_text_color" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/main_footer_menu_background_color"
+            android:layout_margin="4dp"
+            android:gravity="center"
+            android:text="@string/main_footer_menu"
+            android:textColor="@color/main_footer_menu_text_color" />
+    </LinearLayout>
+
+    <!-- Content -->
+    <!-- Set background to #D9DDDC and extract the color to res/values/colors.xml -->
+    <!-- Set padding 10dp -->
+    <!-- Set layoutContent constraint top to bottom of layoutBanner -->
+    <!-- Set layoutContent constraint bottom to top of layoutFooter -->
+    <LinearLayout
+        android:id="@+id/layoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/main_content_background_color"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/layoutBanner"
+        app:layout_constraintBottom_toTopOf="@id/layoutFooter">
+
+        <!-- Create TextView for name of person 1 -->
+        <!-- Set text to "Budi Arif" and extract the text to res/values/strings.xml -->
+        <!-- Set layout_margin 10dp, fontFamily "sans-serif-black", textSize 16sp -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_person_budi"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif-black"
+            android:textSize="16sp" />
+
+        <!-- Create TextView for name of person 2 -->
+        <!-- Set text to "Anton Harum" and extract the text to res/values/strings.xml -->
+        <!-- Set layout_margin 10dp, fontFamily "sans-serif-black", textSize 16sp -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_person_anton"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif-black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
