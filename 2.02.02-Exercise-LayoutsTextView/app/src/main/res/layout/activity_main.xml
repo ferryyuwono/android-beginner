@@ -18,19 +18,58 @@
         android:orientation="horizontal">
 
         <!-- TODO: Create TextView for title of the header -->
-        <!-- TODO: Set text to "Screen 1" and extract the text to res/values/strings.xml -->
+        <!-- TODO: Set text to "Prototype Screen" and extract the text to res/values/strings.xml -->
         <!-- TODO: After extract the text, you can set text using "@string/[string_name]" -->
-        <!-- TODO: Set marginStart 20dp, textSize 14sp, and textColor #40E0D0 -->
+        <!-- TODO: Set layout_marginStart 20dp, textSize 14sp, and textColor #363636 -->
+        <!-- TODO: Extract textColor to res/values/colors.xml -->
 
 
         <!-- TODO: Create TextView for logo of the header -->
         <!-- TODO: Set text to "Logo" and extract the text to res/values/strings.xml -->
-        <!-- TODO: Align it to end, set marginEnd 20dp, textSize 14sp, textStyle italic -->
+        <!-- TODO: Align it to end, set layout_marginEnd 20dp, textSize 14sp, textStyle italic -->
 
     </RelativeLayout>
 
+    <!-- Banner -->
+    <!-- TODO: Set background to #424242 and extract the color to res/values/colors.xml -->
     <!-- TODO: Set layoutContent constraint to bellow layoutHeader -->
-    <!-- TODO: Set paddingTop 10dp, paddingBottom 10dp, paddingStart 20dp, paddingEnd 20dp -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutBanner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <!-- TODO: Create TextView for banner -->
+        <!-- TODO: Set text to "banner" and extract the text to res/values/strings.xml -->
+        <!-- TODO: Set textSize: 20dp, textColor #CCCCCC and extract textColor to res/values/colors.xml -->
+        <!-- TODO: Align it start, end, top, bottom of parent (center of parent) -->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Footer -->
+    <!-- TODO: Set background to #25282A and extract the color to res/values/colors.xml -->
+    <!-- TODO: Set padding 4dp -->
+    <!-- TODO: Set constraint bottom to bottom of parent -->
+    <LinearLayout
+        android:id="@+id/layoutFooter"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <!-- TODO: Create TextView for menu of footer -->
+        <!-- TODO: Set layout_weight "1" and layout_width 0dp (Let LinearLayout divide it based on weight) -->
+        <!-- TODO: Set background to #9EA1A2 and extract the color to res/values/colors.xml -->
+        <!-- TODO: Set layout_margin 4dp, gravity "center" (Text will be centered) -->
+        <!-- TODO: Set text to "Menu" and extract the text to res/values/strings.xml -->
+        <!-- TODO: Set textColor #404040 and extract textColor to res/values/colors.xml -->
+
+        <!-- TODO: Repeat creation of menu TextView for 4 more times -->
+    </LinearLayout>
+
+    <!-- Content -->
+    <!-- TODO: Set background to #D9DDDC and extract the color to res/values/colors.xml -->
+    <!-- TODO: Set padding 10dp -->
+    <!-- TODO: Set layoutContent constraint top to bottom layoutBanner -->
+    <!-- TODO: Set layoutContent constraint bottom to top of layoutFooter -->
     <LinearLayout
         android:id="@+id/layoutContent"
         android:layout_width="match_parent"
@@ -39,13 +78,12 @@
 
         <!-- TODO: Create TextView for name of person 1 -->
         <!-- TODO: Set text to "Budi Arif" and extract the text to res/values/strings.xml -->
-        <!-- TODO: Set marginTop 10dp, marginBottom 10dp, fontFamily "sans-serif-black", textSize 16sp -->
+        <!-- TODO: Set layout_margin 10dp, fontFamily "sans-serif-black", textSize 16sp -->
 
 
         <!-- TODO: Create TextView for name of person 2 -->
         <!-- TODO: Set text to "Anton Harum" and extract the text to res/values/strings.xml -->
-        <!-- TODO: Set marginTop 10dp, marginBottom 10dp, fontFamily "sans-serif-black", textSize 16sp -->
+        <!-- TODO: Set layout_margin 10dp, fontFamily "sans-serif-black", textSize 16sp -->
 
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
