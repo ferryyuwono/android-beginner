@@ -6,16 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!-- The TextView is constraint to start, end, top, bottom of parent  -->
+    <!-- Because the width and height are set to wrap_content, it goes to center of the parent view -->
     <TextView
         android:id="@+id/textViewHelloCenter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World Center"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
+    <!-- Bellow textViewHelloCenter -->
     <TextView
         android:id="@+id/textViewHelloBottom"
         android:layout_width="wrap_content"
@@ -26,6 +29,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textViewHelloCenter" />
 
+    <!-- Above textViewHelloCenter -->
     <TextView
         android:id="@+id/textViewHelloTop"
         android:layout_width="wrap_content"
@@ -36,6 +40,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/textViewHelloCenter" />
 
+    <!-- Set to top of parent -->
     <LinearLayout
         android:id="@+id/layoutLinearLayout"
         android:layout_width="match_parent"
@@ -52,14 +57,15 @@
             android:layout_marginStart="20dp"
             android:text="Hello 1" />
 
+        <!-- Customize textSize -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:textStyle="bold"
             android:textSize="20sp"
             android:text="Hello 2" />
 
+        <!-- Customize textStyle -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -69,6 +75,7 @@
             android:text="Hello 3" />
     </LinearLayout>
 
+    <!-- Set to bottom of parent -->
     <RelativeLayout
         android:id="@+id/layoutRelativeLayout"
         android:layout_width="match_parent"
@@ -76,6 +83,7 @@
         android:background="#00FFFF"
         app:layout_constraintBottom_toBottomOf="parent">
 
+        <!-- Align to start and center vertical -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -84,6 +92,7 @@
             android:layout_centerVertical="true"
             android:text="Hello Start" />
 
+        <!-- Align to top and center horizontal -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -94,6 +103,7 @@
             android:textSize="20sp"
             android:text="Hello Top" />
 
+        <!-- Align to end and center horizontal -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -104,6 +114,8 @@
             android:textSize="30sp"
             android:text="Hello End" />
 
+        <!-- Align to bottom and center horizontal -->
+        <!-- You can use | to combine textStyle -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
