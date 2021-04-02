@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Header -->
+    <!-- TODO: Set background #EAEAEA and extract the color to res/values/colors.xml -->
+    <!-- TODO: Set paddingTop 10dp and paddingBottom 10dp -->
+    <!-- TODO: Set constraint top to top of parent -->
+    <RelativeLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- TODO: Create TextView for title of the header -->
+        <!-- TODO: Set text to "Screen 1" and extract the text to res/values/strings.xml -->
+        <!-- TODO: Set marginStart 20dp, textSize 14sp, and textColor #40E0D0 -->
+
+
+        <!-- TODO: Create TextView for logo of the header -->
+        <!-- TODO: Set text to "Logo" and extract the text to res/values/strings.xml -->
+        <!-- TODO: Align it to end, set marginEnd 20dp, textSize 14sp, textStyle italic -->
+
+    </RelativeLayout>
+
+    <!-- TODO: Set layoutContent constraint to bellow layoutHeader -->
+    <!-- TODO: Set paddingTop 10dp, paddingBottom 10dp, paddingStart 20dp, paddingEnd 20dp -->
+    <LinearLayout
+        android:id="@+id/layoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- TODO: Create TextView for name of person 1 -->
+        <!-- TODO: Set text to "Budi Arif" and extract the text to res/values/strings.xml -->
+        <!-- TODO: Set marginTop 10dp, marginBottom 10dp, fontFamily "sans-serif-black", textSize 16sp -->
+
+
+        <!-- TODO: Create TextView for name of person 2 -->
+        <!-- TODO: Set text to "Anton Harum" and extract the text to res/values/strings.xml -->
+        <!-- TODO: Set marginTop 10dp, marginBottom 10dp, fontFamily "sans-serif-black", textSize 16sp -->
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
