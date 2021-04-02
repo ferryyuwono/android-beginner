@@ -40,7 +40,7 @@ class ExampleUnitTest {
     fun comparePersonClassVsDataClass() {
         //Create Person instance from class and data class
         val person1 = Person("Budi", "Arif", 23)
-        val person2 = PersonData("Budi", "Harum", 23)
+        val person2 = PersonData("Anton", "Harum", 23)
 
         //Create copy of Person instance
         val copyOfPerson1 = Person(person1.firstName, person1.lastName, person1.age)
