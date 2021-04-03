@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">2.03.03-Solution-EditTextButton</string>
+
+    <!-- Main -->
+    <string name="main_title">Person Data</string>
+    <string name="main_input_first_name_label">First Name</string>
+    <string name="main_input_first_name_hint">Input your first name</string>
+    <string name="main_input_last_name_label">Last Name</string>
+    <string name="main_input_last_name_hint">Input your last name</string>
+    <string name="main_input_age_label">Age</string>
+    <string name="main_input_age_hint">Input your age</string>
+    <string name="main_submit_label">Submit</string>
+    <string name="main_input_invalid">All parameter must be filled</string>
+</resources>

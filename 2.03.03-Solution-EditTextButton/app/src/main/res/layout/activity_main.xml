@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Add ScrollView as Root Layout -->
+<!-- ScrollView will automatically make your screen scrollable when -->
+<!-- the content exceed the ScrollView height. Eq: When keyboard shown -->
+<!-- Move all xmlns:android, xmlns:app, xmlns:tools, tools:context to ScrollView -->
+<!-- Change LinearLayout layout_height to wrap_content -->
+<!-- By doing it, it will adjust to total height of the content -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/main_title"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_input_first_name_label"
+            android:textColor="@color/black" />
+
+        <!-- Create EditText for first name -->
+        <!-- Set marginBottom 10dp -->
+        <!-- Set textColorHint to @color/main_input_hint_text_color -->
+        <!-- Set inputType to textCapWords -->
+        <!-- Set hint to @string/main_input_first_name_hint -->
+        <!-- Set textColorHint to @color/main_input_hint_text_color -->
+        <!-- Set textColor to @color/black -->
+        <EditText
+            android:id="@+id/editTextFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:inputType="textCapWords"
+            android:hint="@string/main_input_first_name_hint"
+            android:textColorHint="@color/main_input_hint_text_color"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_input_last_name_label"
+            android:textColor="@color/black" />
+
+        <!-- Create EditText for last name -->
+        <!-- Set marginBottom 10dp -->
+        <!-- Set textColorHint to @color/main_input_hint_text_color -->
+        <!-- Set inputType to textCapWords -->
+        <!-- Set hint to @string/main_input_last_name_hint -->
+        <!-- Set textColorHint to @color/main_input_hint_text_color -->
+        <!-- Set textColor to @color/black -->
+        <EditText
+            android:id="@+id/editTextLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:inputType="textCapWords"
+            android:hint="@string/main_input_last_name_hint"
+            android:textColorHint="@color/main_input_hint_text_color"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_input_age_label"
+            android:textColor="@color/black" />
+
+        <!-- Create EditText for age -->
+        <!-- Set marginBottom 10dp -->
+        <!-- Set textColorHint to @color/main_input_hint_text_color -->
+        <!-- Set inputType to numberSigned -->
+        <!-- Set hint to @string/main_input_last_name_hint -->
+        <!-- Set textColorHint to @color/main_input_hint_text_color -->
+        <!-- Set textColor to @color/black -->
+        <EditText
+            android:id="@+id/editTextAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:inputType="numberSigned"
+            android:hint="@string/main_input_age_hint"
+            android:textColorHint="@color/main_input_hint_text_color"
+            android:textColor="@color/black" />
+        
+        <!-- Create Button submit -->
+        <!-- Set layout_height 60dp -->
+        <!-- Set backgroundTint @color/main_submit_button_background_tint -->
+        <!-- Set textSize 18sp, textAllCaps false, textColor @color/main_submit_button_text_color -->
+        <!-- Set text @string/main_submit_label -->
+        <!-- Set OnClick to "onClickButtonSubmit" -->
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/main_submit_button_background_tint"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:textColor="@color/main_submit_button_text_color"
+            android:text="@string/main_submit_label"
+            android:onClick="onClickButtonSubmit" />
+
+        <TextView
+            android:id="@+id/textViewWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonSubmit"
+            tools:text="Hello, Budi" />
+    </LinearLayout>
+</ScrollView>
