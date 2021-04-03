@@ -2,7 +2,7 @@
     <string name="app_name">2.03.01-Demo-EditTextButton</string>
 
     <!-- Main -->
-    <string name="main_input_name_label">Input your name</string>
-    <string name="main_input_name_hint">Full Name</string>
+    <string name="main_input_name_label">Full Name</string>
+    <string name="main_input_name_hint">Input your name</string>
     <string name="main_submit_label">Submit</string>
 </resources>
