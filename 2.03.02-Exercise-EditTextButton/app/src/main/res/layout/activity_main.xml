@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- TODO: Add ScrollView as Root Layout -->
+<!-- ScrollView will automatically make your screen scrollable when -->
+<!-- the content exceed the ScrollView height. Eq: When keyboard shown -->
+<!-- TODO: Move all xmlns:android, xmlns:app, xmlns:tools, tools:context to ScrollView -->
+<!-- TODO: Change LinearLayout layout_height to wrap_content -->
+<!-- By doing it, it will adjust to total height of the content -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/main_title"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_input_first_name_label"
+        android:textColor="@color/black" />
+
+    <!-- TODO: Create EditText for first name -->
+    <!-- TODO: Set marginBottom 10dp -->
+    <!-- TODO: Set textColorHint to @color/main_input_hint_text_color -->
+    <!-- TODO: Set inputType to textCapWords -->
+    <!-- TODO: Set hint to @string/main_input_first_name_hint -->
+    <!-- TODO: Set textColorHint to @color/main_input_hint_text_color -->
+    <!-- TODO: Set textColor to @color/black -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_input_last_name_label"
+        android:textColor="@color/black" />
+
+    <!-- TODO: Create EditText for last name -->
+    <!-- TODO: Set marginBottom 10dp -->
+    <!-- TODO: Set textColorHint to @color/main_input_hint_text_color -->
+    <!-- TODO: Set inputType to textCapWords -->
+    <!-- TODO: Set hint to @string/main_input_last_name_hint -->
+    <!-- TODO: Set textColorHint to @color/main_input_hint_text_color -->
+    <!-- TODO: Set textColor to @color/black -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_input_age_label"
+        android:textColor="@color/black" />
+
+    <!-- TODO: Create EditText for age -->
+    <!-- TODO: Set marginBottom 10dp -->
+    <!-- TODO: Set textColorHint to @color/main_input_hint_text_color -->
+    <!-- TODO: Set inputType to numberSigned -->
+    <!-- TODO: Set hint to @string/main_input_last_name_hint -->
+    <!-- TODO: Set textColorHint to @color/main_input_hint_text_color -->
+    <!-- TODO: Set textColor to @color/black -->
+
+    <!-- TODO: Create Button submit -->
+    <!-- TODO: Set layout_height 60dp -->
+    <!-- TODO: Set backgroundTint @color/main_submit_button_background_tint -->
+    <!-- TODO: Set textSize 18sp, textColor @color/main_submit_button_text_color -->
+    <!-- TODO: Set text @string/main_submit_label -->
+    <!-- TODO: Set OnClick to "onClickButtonSubmit" -->
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        tools:text="Hello, Budi" />
+
+</LinearLayout>
