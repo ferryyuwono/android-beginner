@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- TODO: Create when `state_checked` is true then set drawable to `@drawable/ic_favorite_checked` -->
+
+    <!-- TODO: Create else then set drawable to `@drawable/ic_favorite_normal` -->
+
+</selector>
