@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">2.04.01-Demo-ImageViewImageButton</string>
+
+    <!-- Main -->
+    <string name="main_logo">Logo</string>
+    <string name="main_title">Person Finder</string>
+    <string name="main_name_label">Name</string>
+    <string name="main_name_hint">Input Name</string>
+    <string name="main_name_invalid">Name must be at least 3 characters long</string>
+
+</resources>
