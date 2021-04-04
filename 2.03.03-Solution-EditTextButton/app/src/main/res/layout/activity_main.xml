@@ -105,7 +105,6 @@
         <!-- Set text @string/main_submit_label -->
         <!-- Set OnClick to "onClickButtonSubmit" -->
         <Button
-            android:id="@+id/buttonSubmit"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:backgroundTint="@color/main_submit_button_background_tint"
@@ -121,8 +120,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:textColor="@color/black"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/buttonSubmit"
             tools:text="Hello, Budi" />
     </LinearLayout>
 </ScrollView>
