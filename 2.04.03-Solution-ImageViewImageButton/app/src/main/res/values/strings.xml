@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">2.04.03-Solution-ImageViewImageButton</string>
+
+    <!-- Main -->
+    <string name="main_quote">Quote</string>
+    <string name="main_title">Your Favorite Quotes</string>
+    <string name="main_name">Name</string>
+    <string name="main_gender">Gender</string>
+    <string name="main_budi_name">Budi Arif</string>
+    <string name="main_budi_gender">Male</string>
+    <string name="main_budi_quote">“The beautiful thing about learning is that nobody can take it away from you.” – B.B. King</string>
+    <string name="main_anton_name">Anton Harum</string>
+    <string name="main_anton_gender">Male</string>
+    <string name="main_anton_quote">“Learning is not attained by chance. It must be sought for with ardor and attended with diligence.” – Abigail Adams</string>
+    <string name="main_add_quote">You have added this quote to your favorite list</string>
+</resources>
