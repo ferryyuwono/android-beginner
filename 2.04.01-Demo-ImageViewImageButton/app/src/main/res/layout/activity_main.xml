@@ -51,6 +51,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/main_search_button_background_tint"
             android:src="@drawable/selector_button_search"
+            android:contentDescription="@string/main_search"
             android:onClick="onClickImageButtonSearch"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/textViewNameLabel" />

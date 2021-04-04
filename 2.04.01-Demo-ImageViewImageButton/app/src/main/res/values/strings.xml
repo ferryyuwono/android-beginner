@@ -6,6 +6,7 @@
     <string name="main_title">Person Finder</string>
     <string name="main_name_label">Name</string>
     <string name="main_name_hint">Input Name</string>
+    <string name="main_search">Search</string>
     <string name="main_name_invalid">Name must be at least 3 characters long</string>
 
 </resources>
