@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">2.06.01-Demo-PersistentData</string>
+
+    <!-- Main -->
+    <string name="main_logo">Logo</string>
+    <string name="main_title">Person Data</string>
+    <string name="main_input_major_label">Major</string>
+    <string name="main_input_major_hint">Input your major</string>
+    <string name="main_input_full_name_label">Full Name</string>
+    <string name="main_input_full_name_hint">Input your full name</string>
+    <string name="main_add_label">Add</string>
+    <string name="main_available_data">Available Data</string>
+    <string name="main_input_invalid">All parameter must be filled</string>
+</resources>
