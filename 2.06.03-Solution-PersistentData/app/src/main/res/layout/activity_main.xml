@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/main_logo"
+            android:src="@drawable/logo"
+            app:tint="@color/main_logo_background_tint"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif-black"
+            android:textSize="18sp"
+            android:text="@string/main_title"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@id/imageViewLogo"
+            app:layout_constraintTop_toTopOf="@id/imageViewLogo"
+            app:layout_constraintBottom_toBottomOf="@id/imageViewLogo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/textViewTitle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_input_username_label"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/editTextUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:inputType="text"
+                android:hint="@string/main_input_username_hint"
+                android:textColorHint="@color/main_input_hint_text_color"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_input_password_label"
+                android:textColor="@color/black" />
+
+            <!-- Set inputType to "textPassword -->
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:inputType="textPassword"
+                android:hint="@string/main_input_password_hint"
+                android:textColorHint="@color/main_input_hint_text_color"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_input_confirm_password_label"
+                android:textColor="@color/black" />
+
+            <!-- Set inputType to "textPassword -->
+            <EditText
+                android:id="@+id/editTextConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:inputType="textPassword"
+                android:hint="@string/main_input_confirm_password_hint"
+                android:textColorHint="@color/main_input_hint_text_color"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textViewError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/main_invalid_text_color"
+                android:text="@string/main_all_parameter_must_be_filled"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/main_add_button_background_tint"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:textColor="@color/main_add_button_text_color"
+                android:text="@string/main_register_label"
+                android:onClick="onClickButtonRegister" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/main_available_data"
+                android:textSize="18sp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textViewData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                tools:text="Person Data" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
