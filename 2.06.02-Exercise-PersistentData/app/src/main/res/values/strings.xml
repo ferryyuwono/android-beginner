@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">2.06.02-Exercise-PersistentData</string>
+
+    <!-- Main -->
+    <string name="main_logo">Logo</string>
+    <string name="main_title">Registration</string>
+    <string name="main_input_username_label">Username</string>
+    <string name="main_input_username_hint">Input your username</string>
+    <string name="main_input_password_label">Password</string>
+    <string name="main_input_password_hint">Input your password</string>
+    <string name="main_input_confirm_password_label">Confirm Password</string>
+    <string name="main_input_confirm_password_hint">Re-input your password</string>
+    <string name="main_register_label">Register</string>
+    <string name="main_available_data">Available User</string>
+    <string name="main_all_parameter_must_be_filled">All parameter must be filled</string>
+    <string name="main_password_confirmation_does_not_match">Password confirmation doesn not match</string>
+</resources>
