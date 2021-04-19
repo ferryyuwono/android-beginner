@@ -10,6 +10,7 @@
     <string name="main_parcel_id_empty_error">Parcel Id must be filled</string>
     <string name="main_parcel_id_range_error">Parcel Id must be between 1 – 100</string>
 
+    <!-- Status -->
     <string name="status_parcel_id_label">Your Parcel Id</string>
     <string name="status_label">Status</string>
     <string name="status_arrived">Parcel has reached its destination</string>

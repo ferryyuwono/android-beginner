@@ -16,6 +16,7 @@
     <color name="main_add_button_text_color">#FFFFFF</color>
     <color name="main_invalid_text_color">#FF0000</color>
 
+    <!-- Status -->
     <color name="status_background_color">#ADD8E6</color>
     <color name="status_arrived_text_color">#00CC33</color>
     <color name="status_delivery_text_color">#00CCFF</color>
