@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/status_background_color"
     android:padding="10dp"
-    tools:context=".MainActivity">
+    tools:context=".StatusActivity">
 
     <ImageView
         android:id="@+id/imageViewLogo"
