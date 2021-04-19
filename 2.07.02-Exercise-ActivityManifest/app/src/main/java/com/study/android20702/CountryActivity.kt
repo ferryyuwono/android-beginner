@@ -41,7 +41,7 @@ class CountryActivity : AppCompatActivity() {
         //TODO: Get String intent extra SELECTED_COUNTRY_EXTRA
         val selectedCountry = ""
 
-        //TODO: Validate if selectedCountry is null then return
+        //Validate if selectedCountry is null then return
         if (selectedCountry.isNullOrEmpty()) {
             return
         }
