@@ -71,10 +71,10 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:backgroundTint="@color/main_add_button_background_tint"
+                android:backgroundTint="@color/main_button_background_tint"
                 android:textSize="18sp"
                 android:textAllCaps="false"
-                android:textColor="@color/main_add_button_text_color"
+                android:textColor="@color/main_button_text_color"
                 android:text="@string/main_check_label"
                 android:onClick="onClickButtonCheck" />
         </LinearLayout>

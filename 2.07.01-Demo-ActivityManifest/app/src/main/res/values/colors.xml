@@ -12,8 +12,8 @@
     <color name="main_background_color">#FFFFFF</color>
     <color name="main_logo_background_tint">#000080</color>
     <color name="main_input_hint_text_color">#464646</color>
-    <color name="main_add_button_background_tint">#1C62D7</color>
-    <color name="main_add_button_text_color">#FFFFFF</color>
+    <color name="main_button_background_tint">#1C62D7</color>
+    <color name="main_button_text_color">#FFFFFF</color>
     <color name="main_invalid_text_color">#FF0000</color>
 
     <!-- Status -->
