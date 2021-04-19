@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">2.07.03-Solution-ActivityManifest</string>
+
+    <!-- Main -->
+    <string name="main_logo">Logo</string>
+    <string name="main_title">Country Picker</string>
+    <string name="main_input_country_label">Country (Southeast Asia)</string>
+    <string name="main_input_country_hint">Choose your country</string>
+
+    <!-- Country -->
+    <string name="country_title">Southeast Asia country</string>
+    <string name="country_brunei">Brunei</string>
+    <string name="country_cambodia">Cambodia</string>
+    <string name="country_east_timor">East Timor</string>
+    <string name="country_indonesia">Indonesia</string>
+    <string name="country_laos">Laos</string>
+    <string name="country_malaysia">Malaysia</string>
+    <string name="country_myanmar">Myanmar</string>
+    <string name="country_philippines">Philippines</string>
+    <string name="country_singapore">Singapore</string>
+    <string name="country_thailand">Thailand</string>
+    <string name="country_vietnam">Vietnam</string>
+</resources>
