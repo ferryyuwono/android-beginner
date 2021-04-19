@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "2.07.01-Demo-ActivityManifest"

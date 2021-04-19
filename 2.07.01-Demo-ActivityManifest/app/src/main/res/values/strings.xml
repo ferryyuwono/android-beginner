@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">2.07.01-Demo-ActivityManifest</string>
+
+    <!-- Main -->
+    <string name="main_logo">Logo</string>
+    <string name="main_title">Track Your Parcel</string>
+    <string name="main_input_parcel_id_label">Parcel Id</string>
+    <string name="main_input_parcel_id_hint">Input your parcel id (1 – 100)</string>
+    <string name="main_check_label">Check</string>
+    <string name="main_parcel_id_empty_error">Parcel Id must be filled</string>
+    <string name="main_parcel_id_range_error">Parcel Id must be between 1 – 100</string>
+
+    <string name="status_parcel_id_label">Your Parcel Id</string>
+    <string name="status_label">Status</string>
+    <string name="status_arrived">Parcel has reached its destination</string>
+    <string name="status_delivery">Parcel is on the way to you</string>
+    <string name="status_in_process">Parcel is being processed by the seller</string>
+</resources>
