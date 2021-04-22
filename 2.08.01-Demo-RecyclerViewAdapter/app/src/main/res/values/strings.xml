@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">2.08.01-Demo-RecyclerViewAdapter</string>
+
+    <!-- Main -->
+    <string name="main_title">MyTube</string>
+
+    <!-- Video -->
+    <string name="video_user">User</string>
+</resources>
