@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">2.08.02-Exercise-RecyclerViewAdapter</string>
+
+    <!-- Main -->
+    <string name="main_menu">Menu</string>
+    <string name="main_title">MyTwit</string>
+    <string name="main_favorite">Favorite</string>
+    <string name="main_input_twit_hint">Type your twit</string>
+    <string name="main_twit_error_title">Error</string>
+    <string name="main_twit_empty_error">Twit must be filled</string>
+    <string name="main_twit_error_ok">OK</string>
+
+    <!-- Video -->
+    <string name="video_user">User</string>
+</resources>
