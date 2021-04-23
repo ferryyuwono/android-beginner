@@ -10,11 +10,12 @@ class VideoAdapter(
     private val onItemClicked: (VideoModel) -> Unit
 ) : RecyclerView.Adapter<VideoViewHolder>() {
 
-    var data = mutableListOf<VideoModel>()
-        set(value) {
-            field = value
-            notifyDataSetChanged()
-        }
+    private var data = mutableListOf<VideoModel>()
+
+    fun addAllData(collection: List<VideoModel>) {
+        data.addAll(collection)
+        notifyDataSetChanged()
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, type: Int): VideoViewHolder {
         //Create view binding for item_video

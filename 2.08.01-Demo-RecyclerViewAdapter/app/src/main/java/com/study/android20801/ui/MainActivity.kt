@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         //Add data to adapter
-        adapter.data = videoList
+        adapter.addAllData(videoList)
     }
 
     private fun initRecyclerView() {
