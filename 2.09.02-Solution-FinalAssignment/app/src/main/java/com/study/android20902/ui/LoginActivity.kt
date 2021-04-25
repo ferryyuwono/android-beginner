@@ -10,6 +10,7 @@ import com.google.gson.Gson
 import com.study.android20902.R
 import com.study.android20902.data.UserData
 import com.study.android20902.databinding.ActivityLoginBinding
+import com.study.android20902.extension.toMd5
 
 class LoginActivity : AppCompatActivity() {
 
