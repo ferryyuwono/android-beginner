@@ -17,7 +17,10 @@
             </intent-filter>
         </activity>
 
+        <!-- Create Intent Sign Up Activity -->
         <activity android:name="com.study.android20902.ui.SignUpActivity" />
+
+        <!-- Create Intent Home Activity -->
         <activity android:name="com.study.android20902.ui.HomeActivity" />
     </application>
 

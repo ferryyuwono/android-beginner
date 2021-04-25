@@ -13,6 +13,8 @@
     <string name="login_input_invalid">All parameter must be filled</string>
     <string name="login_user_or_password_wrong">Username or password is wrong</string>
     <string name="login_label">Login</string>
+    <string name="login_new_user_label">New User?</string>
+    <string name="login_sign_up_now_label">Sign Up Now</string>
 
     <!-- Sign Up -->
     <string name="sign_up_title">Sign Up</string>

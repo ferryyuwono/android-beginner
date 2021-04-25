@@ -59,7 +59,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:text="@string/sign_up_input_username_label"
+                android:text="@string/login_input_username_label"
                 android:textColor="@color/main_title_text_color" />
 
             <EditText
@@ -75,7 +75,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="10dp"
                 android:inputType="text"
-                android:hint="@string/sign_up_input_username_hint"
+                android:hint="@string/login_input_username_hint"
                 android:textColorHint="@color/main_input_hint_text_color"
                 android:textColor="@color/main_title_text_color" />
 
@@ -84,7 +84,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:text="@string/sign_up_input_password_label"
+                android:text="@string/login_input_password_label"
                 android:textColor="@color/main_title_text_color" />
 
             <EditText
@@ -98,9 +98,9 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginBottom="30dp"
+                android:layout_marginBottom="20dp"
                 android:inputType="textPassword"
-                android:hint="@string/sign_up_input_password_hint"
+                android:hint="@string/login_input_password_hint"
                 android:textColorHint="@color/main_input_hint_text_color"
                 android:textColor="@color/main_title_text_color" />
 
@@ -128,6 +128,27 @@
                 android:textColor="@color/main_submit_button_text_color"
                 android:text="@string/login_label"
                 android:onClick="onClickButtonLogin" />
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/login_new_user_label"
+                android:textColor="@color/main_title_text_color" />
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/main_submit_button_background_tint"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:textColor="@color/main_submit_button_text_color"
+                android:text="@string/login_sign_up_now_label"
+                android:onClick="onClickButtonSignUp" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

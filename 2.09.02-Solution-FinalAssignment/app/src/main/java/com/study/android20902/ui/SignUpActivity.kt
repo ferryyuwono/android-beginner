@@ -1,11 +1,11 @@
 package com.study.android20902.ui
 
-import android.content.Context
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.preference.PreferenceManager
 import com.google.gson.Gson
 import com.study.android20902.R
 import com.study.android20902.data.UserData
@@ -24,7 +24,7 @@ class SignUpActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         //Get shared preference instance
-        sharedPreferences = getPreferences(Context.MODE_PRIVATE)
+        sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this)
 
         //Call function getUserList
         getUserList()

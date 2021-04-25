@@ -1,17 +1,16 @@
 package com.study.android20902.ui
 
-import android.content.Context
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.preference.PreferenceManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.gson.Gson
 import com.study.android20902.R
 import com.study.android20902.data.InstaData
 import com.study.android20902.databinding.ActivityHomeBinding
-import kotlin.random.Random
 
 class HomeActivity : AppCompatActivity() {
 
@@ -30,7 +29,7 @@ class HomeActivity : AppCompatActivity() {
         fullName = intent.getStringExtra(FULLNAME_EXTRA).toString()
 
         //Get shared preference instance
-        sharedPreferences = getPreferences(Context.MODE_PRIVATE)
+        sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this)
 
         //Initialize adapter
         initAdapter()
@@ -114,12 +113,12 @@ class HomeActivity : AppCompatActivity() {
         }
 
         //Create InstaData with fullName, message
-        //Random value of imageId from 0 to 3 using Random.nextInt(4)
-        //Random value of totalView from 0 to 999 using Random.nextInt(1000)
+        //Random value of imageId from 0 to 3 using (0..3).random()
+        //Random value of totalView from 0 to 1000 using (0..1000).random()
         val data = InstaData(
             fullName = fullName,
-            imageId = Random.nextInt(4),
-            totalView = Random.nextInt(1000),
+            imageId = (0..3).random(),
+            totalView = (0..1000).random(),
             message = message
         )
 
@@ -129,8 +128,8 @@ class HomeActivity : AppCompatActivity() {
         //Clear the message
         binding.editTextPost.text.clear()
 
-        //Add data to collection instaList
-        instaList.add(data)
+        //Add data to collection instaList at index 0
+        instaList.add(0, data)
 
         //Save insta list
         saveInstaList()
