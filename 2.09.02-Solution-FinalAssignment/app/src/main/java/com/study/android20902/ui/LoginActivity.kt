@@ -28,7 +28,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun findUser(username: String, passwordMd5: String): UserData? {
-        //Get `userListJson` String from shared preferences, set default value to ""
+        //Get `userListJson` String from shared preferences USER_LIST_KEY, set default value to ""
         val userListJson = sharedPreferences.getString(USER_LIST_KEY, "")
 
         //Validate if the `userListJson` is null or empty, return
@@ -43,7 +43,7 @@ class LoginActivity : AppCompatActivity() {
         //We passing String userListJson, and class type we want to convert
         val userArray = gson.fromJson(userListJson, Array<UserData>::class.java)
 
-        //Find user from userArray (username ignoreCase true and password is equals)
+        //Find and return user from userArray using `find` (username ignoreCase true and password is equals)
         return userArray.find { x ->
             x.username.equals(username, true) && x.passwordMd5 == passwordMd5
         }

@@ -31,7 +31,7 @@ class SignUpActivity : AppCompatActivity() {
     }
 
     private fun getUserList() {
-        //Get `userListJson` String from shared preferences, set default value to ""
+        //Get `userListJson` String from shared preferences USER_LIST_KEY, set default value to ""
         val userListJson = sharedPreferences.getString(USER_LIST_KEY, "")
 
         //Validate if the `userListJson` is null or empty, return
@@ -94,15 +94,15 @@ class SignUpActivity : AppCompatActivity() {
         binding.textViewError.visibility = View.GONE
 
         //Create UserData
-        val person = UserData(
+        val user = UserData(
             firstName = firstName,
             lastName = lastName,
             username = username,
             passwordMd5 = password.toMd5() //Save password in md5 format
         )
 
-        //Add to collection
-        userList.add(person)
+        //Add user to collection
+        userList.add(user)
 
         //Save user list
         saveUserList()

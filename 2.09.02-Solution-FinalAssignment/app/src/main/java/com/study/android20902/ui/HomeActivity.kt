@@ -39,7 +39,7 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun getInstaList() {
-        //Get `instaListJson` String from shared preferences, set default value to ""
+        //Get `instaListJson` String from shared preferences INSTA_LIST_KEY, set default value to ""
         val instaListJson = sharedPreferences.getString(INSTA_LIST_KEY, "")
 
         //Validate if the `instaListJson` is null or empty, return
