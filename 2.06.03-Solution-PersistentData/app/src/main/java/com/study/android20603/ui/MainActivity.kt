@@ -1,10 +1,10 @@
 package com.study.android20603.ui
 
-import android.content.Context
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.preference.PreferenceManager
 import com.google.gson.Gson
 import com.study.android20603.R
 import com.study.android20603.data.UserData
@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         //Get shared preference instance
-        sharedPreferences = getPreferences(Context.MODE_PRIVATE)
+        sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this)
 
         //Call function getUserList
         getUserList()

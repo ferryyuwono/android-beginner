@@ -1,6 +1,5 @@
 package com.study.android20602.ui
 
-import android.content.Context
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -14,7 +13,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
     //TODO: Create SharedPreferences variable
-    private lateinit var sharedPreferences: SharedPreferences
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,7 +21,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         //TODO: Get shared preference instance
-        sharedPreferences = getPreferences(Context.MODE_PRIVATE)
 
         //Call function getUserList
         getUserList()

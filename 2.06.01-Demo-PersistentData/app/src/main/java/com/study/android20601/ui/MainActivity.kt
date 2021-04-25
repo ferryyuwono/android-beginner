@@ -1,10 +1,10 @@
 package com.study.android20601.ui
 
-import android.content.Context
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.preference.PreferenceManager
 import com.study.android20601.data.PersonData
 import com.study.android20601.databinding.ActivityMainBinding
 
@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         //Get shared preference instance
-        sharedPreferences = getPreferences(Context.MODE_PRIVATE)
+        sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this)
         setMajorPersistentValue()
     }
 
