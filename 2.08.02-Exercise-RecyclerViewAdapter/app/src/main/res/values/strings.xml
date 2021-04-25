@@ -4,7 +4,7 @@
     <!-- Main -->
     <string name="main_menu">Menu</string>
     <string name="main_title">MyTwit</string>
-    <string name="main_favorite">Favorite</string>
+    <string name="main_post">Favorite</string>
     <string name="main_input_twit_hint">Type your twit</string>
     <string name="main_twit_error_title">Error</string>
     <string name="main_twit_empty_error">Twit must be filled</string>
