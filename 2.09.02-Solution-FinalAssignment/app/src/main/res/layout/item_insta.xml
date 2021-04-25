@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:background="@color/main_background">
+
+    <ImageView
+        android:id="@+id/imageViewUser"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_user"
+        android:contentDescription="@string/insta_user_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/main_title_text_color"
+        app:layout_constraintStart_toEndOf="@id/imageViewUser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/imageViewUser"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewUser"
+        tools:text="@tools:sample/full_names" />
+
+    <ImageView
+        android:id="@+id/imageViewThumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:contentDescription="@string/insta_image_description"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintTop_toBottomOf="@id/imageViewUser"
+        tools:src="@tools:sample/backgrounds/scenic" />
+
+    <CheckBox
+        android:id="@+id/checkBoxFavorite"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_checkbox_favorite"
+        android:button="@null"
+        android:backgroundTint="@color/main_icon_tint_color"
+        app:layout_constraintTop_toBottomOf="@id/imageViewThumbnail"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text=" " />
+
+    <ImageButton
+        android:id="@+id/imageButtonComment"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/insta_comment_description"
+        android:background="@null"
+        android:src="@drawable/ic_comment"
+        android:tint="@color/main_icon_tint_color"
+        app:layout_constraintTop_toBottomOf="@id/imageViewThumbnail"
+        app:layout_constraintStart_toEndOf="@id/checkBoxFavorite" />
+
+    <ImageButton
+        android:id="@+id/imageButtonPost"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/insta_post_description"
+        android:background="@null"
+        android:src="@drawable/ic_post"
+        android:tint="@color/main_icon_tint_color"
+        app:layout_constraintTop_toBottomOf="@id/imageViewThumbnail"
+        app:layout_constraintStart_toEndOf="@id/imageButtonComment" />
+
+    <CheckBox
+        android:id="@+id/checkBoxBookmark"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_checkbox_bookmark"
+        android:button="@null"
+        android:backgroundTint="@color/main_icon_tint_color"
+        app:layout_constraintTop_toBottomOf="@id/imageViewThumbnail"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text=" " />
+
+    <TextView
+        android:id="@+id/textViewViewCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="@color/main_title_text_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkBoxFavorite"
+        tools:text="400 views" />
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="12sp"
+        android:textColor="@color/main_title_text_color"
+        android:maxLines="4"
+        android:ellipsize="end"
+        app:layout_constraintTop_toBottomOf="@id/textViewViewCount"
+        tools:text="@tools:sample/lorem/random" />
+</androidx.constraintlayout.widget.ConstraintLayout>

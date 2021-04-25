@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_content_background"
+    tools:context=".ui.HomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/header_background"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:text="@string/app_title"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/main_title_text_color" />
+
+        <ImageButton
+            android:id="@+id/imageButtonLogout"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/home_logout_label"
+            android:background="@null"
+            android:src="@drawable/ic_logout"
+            android:onClick="onClickButtonLogout" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_background"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+
+        <ImageButton
+            android:id="@+id/imageButtonPost"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:padding="4dp"
+            android:background="@null"
+            android:contentDescription="@string/home_post"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_post"
+            android:scaleType="fitCenter"
+            android:onClick="onClickButtonPost" />
+
+        <EditText
+            android:id="@+id/editTextPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background"
+            android:padding="10dp"
+            android:layout_marginEnd="5dp"
+            android:inputType="textCapWords"
+            android:hint="@string/home_post_hint"
+            android:textColorHint="@color/main_input_hint_text_color"
+            android:textColor="@color/main_title_text_color"
+            android:layout_toStartOf="@id/imageButtonPost"/>
+    </RelativeLayout>
+
+    <!-- Create RecyclerView recyclerViewTwit -->
+    <!-- Set tools:listitem to item_insta -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewInsta"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/layoutMessage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:listitem="@layout/item_insta" />
+
+</LinearLayout>

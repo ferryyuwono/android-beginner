@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">2.09.02-Solution-FinalAssignment</string>
+
+    <!-- App -->
+    <string name="app_title">MyInsta</string>
+
+    <!-- Login -->
+    <string name="login_title">Login</string>
+    <string name="login_input_username_label">Username</string>
+    <string name="login_input_username_hint">Enter your username</string>
+    <string name="login_input_password_label">Password</string>
+    <string name="login_input_password_hint">Enter your password</string>
+    <string name="login_input_invalid">All parameter must be filled</string>
+    <string name="login_user_or_password_wrong">Username or password is wrong</string>
+    <string name="login_label">Login</string>
+
+    <!-- Sign Up -->
+    <string name="sign_up_title">Sign Up</string>
+    <string name="sign_up_input_first_name_label">First Name</string>
+    <string name="sign_up_input_first_name_hint">Input your first name</string>
+    <string name="sign_up_input_last_name_label">Last Name</string>
+    <string name="sign_up_input_last_name_hint">Input your last name</string>
+    <string name="sign_up_input_username_label">Username</string>
+    <string name="sign_up_input_username_hint">Input your username</string>
+    <string name="sign_up_input_password_label">Password</string>
+    <string name="sign_up_input_password_hint">Input your password</string>
+    <string name="sign_up_label">Sign Up</string>
+    <string name="sign_up_input_invalid">All parameter must be filled</string>
+    <string name="sign_up_user_exists">Sorry, that username already exists</string>
+    <string name="sign_up_success">Sign Up Success. Please login to continue</string>
+    <string name="sign_up_ok">OK</string>
+
+    <!-- Home -->
+    <string name="home_title">Home</string>
+    <string name="home_post">Post</string>
+    <string name="home_post_hint">Enter your post</string>
+    <string name="home_logout_label">Logout</string>
+    <string name="home_input_invalid">Message must be filled</string>
+
+    <!-- Insta -->
+    <string name="insta_user_description">User</string>
+    <string name="insta_image_description">Insta</string>
+    <string name="insta_comment_description">Comment</string>
+    <string name="insta_post_description">Post</string>
+</resources>
