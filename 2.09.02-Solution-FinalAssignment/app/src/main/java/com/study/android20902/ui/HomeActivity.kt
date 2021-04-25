@@ -34,6 +34,8 @@ class HomeActivity : AppCompatActivity() {
 
         //Initialize adapter
         initAdapter()
+
+        //Initialize recyclerview
         initRecyclerView()
     }
 
