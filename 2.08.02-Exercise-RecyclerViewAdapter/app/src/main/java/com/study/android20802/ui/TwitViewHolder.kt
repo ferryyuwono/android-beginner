@@ -10,7 +10,7 @@ class TwitViewHolder(
 ) : RecyclerView.ViewHolder(binding.root) {
     init {
         //TODO: Set click listener when item is clicked
-        //TODO: Call onItemClicked with adapterPosition as parameter
+        //TODO: Call onItemClicked with bindingAdapterPosition as parameter
     }
 
     fun bind(model: TwitModel) {

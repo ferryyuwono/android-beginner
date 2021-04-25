@@ -11,8 +11,8 @@ class TwitViewHolder(
     init {
         //Set click listener when item is clicked
         itemView.setOnClickListener {
-            //Call onItemClicked with adapterPosition as parameter
-            onItemClicked(adapterPosition)
+            //Call onItemClicked with bindingAdapterPosition as parameter
+            onItemClicked(bindingAdapterPosition)
         }
     }
 

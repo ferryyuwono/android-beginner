@@ -12,8 +12,8 @@ class VideoViewHolder(
     init {
         //Set click listener when item is clicked
         itemView.setOnClickListener {
-            //Call onItemClicked
-            onItemClicked(adapterPosition)
+            //Call onItemClicked with bindingAdapterPosition as parameter
+            onItemClicked(bindingAdapterPosition)
         }
     }
 
