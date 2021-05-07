@@ -4,7 +4,7 @@ This repository contains all the source code for demo, exercise, and solutions o
 You can download this code using the `Code` -> `Clone` or `Download ZIP` button at the top right.
 
 Slide for module 1:
-[Introduction to Android and Kotlin](https://docs.google.com/presentation/d/11gjqDeaBgiU_Oai5x4iKCAnDtpOPNFNV_qBZNQNRPOU/edit?usp=sharing)
+[Introduction to Android and Kotlin](https://github.com/ferryyuwono/android-beginner/blob/main/Beginner%20Level%20for%20Android%20Development%20using%20Kotlin%20-%20Module%201.pdf)
 
 Slide for module 2:
-[Develop Your First Android Application](https://docs.google.com/presentation/d/1hSMB7POvi9ZN-GF_UOTKnE7sgOeRgcWFcfYxqIdMZNY/edit?usp=sharing)
+[Develop Your First Android Application](https://github.com/ferryyuwono/android-beginner/blob/main/Beginner%20Level%20for%20Android%20Development%20using%20Kotlin%20-%20Module%202.pdf)
